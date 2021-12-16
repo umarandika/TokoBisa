@@ -4,6 +4,7 @@ import learn.idn.tokobisa.R
 
 object EcomData {
 
+    //HOME
     private val titleHome = arrayOf(
         "Baju Anak",
         "Baju Dewasa",
@@ -13,11 +14,11 @@ object EcomData {
     )
 
     private val detailHome = arrayOf(
-        "Lorem ipsum dolor dit amet",
-        "Lorem ipdswwfwamet",
-        "Lorekadowoqolor dit amet",
-        "Lorem ipor dit amet",
-        "Lorem ipsum do amet"
+        "Baju kemeja anak",
+        "Baju dewasa",
+        "Baju main",
+        "Baju renang",
+        "Baju tidur"
     )
 
     private val imageHome = intArrayOf(
@@ -29,12 +30,34 @@ object EcomData {
     )
 
     private val priceHome = arrayOf(
-        "rp 20.000",
-        "rp 30.000",
-        "rp 40.000",
-        "rp 60.000",
-        "rp 100.000"
+        "Rp 20.000",
+        "Rp 30.000",
+        "Rp 40.000",
+        "Rp 60.000",
+        "Rp 100.000"
         )
+
+    // BOOKMARK
+    private val titleBook = arrayOf(
+        "Baju Anak",
+        "Baju Dewasa"
+    )
+
+    private val detailBook = arrayOf(
+        "Lorem ipsum dolor dit amet",
+        "Lorem ipdswwfwamet"
+    )
+
+    private val imageBook = intArrayOf(
+        R.drawable.shirt,
+        R.drawable.androidcert
+    )
+
+    private val priceBook = arrayOf(
+        "rp 20.000",
+        "rp 30.000"
+    )
+
 
 
     val listDataEcom: ArrayList<Ecom>
@@ -55,5 +78,25 @@ object EcomData {
 
             return list
         }
+
+    val listDataEcomm: ArrayList<Ecom>
+        get() {
+            val lists = arrayListOf<Ecom>()
+            for (position in titleBook.indices) {
+                val book = Ecom()
+                book.title = titleBook[position]
+                book.detail = detailBook[position]
+                book.image = imageBook[position]
+                book.price = priceBook[position]
+
+
+
+
+                lists.add(book)
+            }
+
+            return lists
+        }
+
 
 }
