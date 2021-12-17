@@ -10,6 +10,6 @@
         android:icon="@drawable/ic_bookmark"/>
     <item
         android:id="@+id/setting_menu"
-        android:title="Info"
+        android:title="Settings"
         android:icon="@drawable/ic_info"/>
 </menu>

@@ -29,32 +29,24 @@ class SettingsFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View {
 
-//        val view: View = inflater!!.inflate(R.layout.fragment_settings, container, false)
+        val view: View = inflater!!.inflate(R.layout.fragment_settings, container, false)
 
         _binding = FragmentSettingsBinding.inflate(inflater, container, false)
-
-        btn_logout.findViewById<Button>(R.id.btn_logout)
-
-        btn_logout.setOnClickListener {
-//            findNavController().navigate(R.id.action_mainFragment_to_viewBalanceFragment2)
-            val intent = Intent (this@SettingsFragment.requireContext(), LoginActivity::class.java)
-            startActivity(intent)
-        }
 
         return binding.root
 
 
-        // Inflate the layout for this fragment
+         //Inflate the layout for this fragment
 
 
-//        val bind = FragmentSettingsBinding.inflate(layoutInflater)
-//
-//        bind.btnLogout.setOnClickListener {
-//            val intent = Intent (this@SettingsFragment.requireContext(), LoginActivity::class.java)
-//            startActivity(intent)
-//        }
-//
-//        return bind.root
+        val bind = FragmentSettingsBinding.inflate(layoutInflater)
+
+        bind.btnLogout.setOnClickListener {
+            val intent = Intent (this@SettingsFragment.requireContext(), LoginActivity::class.java)
+            startActivity(intent)
+        }
+
+        return bind.root
     }
 
 

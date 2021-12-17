@@ -27,7 +27,7 @@ class LoginActivity : AppCompatActivity() {
         val btnLogin : Button =  findViewById(R.id.btn_login)
 
 
-        dataEmail = arrayOf("rizkia", "febri", "hardiansyah")
+        dataEmail = arrayOf("khalish", "umar", "rifqi")
         dataPassword = arrayOf("1234", "4321", "1423")
 
         btnLogin.setOnClickListener {

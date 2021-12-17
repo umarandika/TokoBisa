@@ -37,18 +37,14 @@ class MainActivity : AppCompatActivity() {
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        return when (item.itemId) {
-            R.id.english -> {
-                Toast.makeText(this, "English", Toast.LENGTH_LONG).show()
-                return true
-            }
-            R.id.indonesia -> {
-                Toast.makeText(this, "Indonesia", Toast.LENGTH_LONG).show()
-                return true
-            }
-            else -> super.onOptionsItemSelected(item)
-        }
+        when (item.itemId){
+            R.id.english ->
+            Toast.makeText(this, "has been changed to English", Toast.LENGTH_LONG).show()
 
+            R.id.indonesia ->
+                Toast.makeText(this, "telah di ubah ke bahasa indonesia", Toast.LENGTH_LONG).show()
+        }
+        return super.onOptionsItemSelected(item)
     }
 
     private fun setCurrentFragment(fragment: Fragment)=
