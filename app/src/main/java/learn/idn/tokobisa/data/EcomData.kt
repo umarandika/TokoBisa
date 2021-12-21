@@ -9,24 +9,24 @@ object EcomData {
         "Baju Anak",
         "Baju Dewasa",
         "Baju Main",
-        "Baju Renang",
+        "Baju Koko",
         "Baju Tidur"
     )
 
     private val detailHome = arrayOf(
-        "Baju kemeja anak",
-        "Baju dewasa",
-        "Baju main",
-        "Baju renang",
-        "Baju tidur"
+        "Baju Anak",
+        "Baju Dewasa",
+        "Baju Main",
+        "Baju Koko",
+        "Baju Tidur"
     )
 
     private val imageHome = intArrayOf(
         R.drawable.shirt,
-        R.drawable.androidcert,
-        R.drawable.kotlincert,
-        R.drawable.pythoncert,
-        R.drawable.solidcert
+        R.drawable.dewasa,
+        R.drawable.main,
+        R.drawable.koko,
+        R.drawable.tidur
     )
 
     private val priceHome = arrayOf(
@@ -44,18 +44,18 @@ object EcomData {
     )
 
     private val detailBook = arrayOf(
-        "Lorem ipsum dolor dit amet",
-        "Lorem ipdswwfwamet"
+        "Baju Anak",
+        "Baju Dewasa"
     )
 
     private val imageBook = intArrayOf(
         R.drawable.shirt,
-        R.drawable.androidcert
+        R.drawable.dewasa
     )
 
     private val priceBook = arrayOf(
-        "rp 20.000",
-        "rp 30.000"
+        "Rp 20.000",
+        "Rp 30.000"
     )
 
 
